@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    font-size: 1.1em;
+    color: #4D505F;
+    
+    margin-left: 0.4em;
+
+    background-color: transparent;
+    border: none;
+
+    width: 14em;
+}
+
+.search-input:focus {
+    border-bottom: 2px solid #4D505F;
+    outline: none;
+}
