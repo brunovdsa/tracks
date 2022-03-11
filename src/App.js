@@ -1,11 +1,12 @@
 import React from 'react';
+
 import './App.css';
-import Main from './views/main';
+import Router from "./Router.js"
 
 function App() {
   return (
     <>
-      <Main />
+      <Router/>
     </>
   );
 }
