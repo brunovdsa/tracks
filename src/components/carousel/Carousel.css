@@ -1,80 +1,82 @@
 .carousel {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 13rem;
-    padding-left: 1rem;
-    color: #fefefe;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 13rem;
+  padding-left: 1rem;
+  color: #fefefe;
 }
 
 .container {
-    display: flex;
-    overflow-x: auto;
+  display: flex;
+  overflow-x: auto;
 
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 100vw;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100vw;
 }
 
 .main-title h1 {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .container::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .container .item {
-    background-color: transparent;
-    box-shadow: 2px white;
-    margin: 10px;
-    padding: 10px;
-    width: 9rem;
-    height: 12rem;
-    border-radius: 16px;
-    flex: none;
+  background-color: transparent;
+  box-shadow: 2px white;
+  margin: 10px;
+  padding: 10px;
+  width: 9rem;
+  height: 12rem;
+  border-radius: 16px;
+  flex: none;
 }
 
 .container .item .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container .item .description {
-    height: 140px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.container .item .description p{
-    font-size: 0.6rem;
-    padding: 0;
-    margin: 0;
+.container .item .description p {
+  font-size: 0.6rem;
+  padding: 0;
+  margin: 0;
 }
 
-.container .item .title h2{
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
+.container .item .title h2 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
 }
 
-.left-btn, .right-btn{
-    background-color: transparent;
-    border: none;
-    cursor: pointer; 
-    scroll-behavior: smooth;
-    display: none;
+.left-btn,
+.right-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  scroll-behavior: smooth;
+  display: none;
 }
 
-.left-btn img, .right-btn img{
-    width: 1.5rem;     
+.left-btn img,
+.right-btn img {
+  width: 1.5rem;
 }
 
 .left-btn img {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
