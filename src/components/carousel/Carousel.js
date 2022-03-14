@@ -29,7 +29,7 @@ export default function Caroulsel() {
   if (!data || !data.length) return null;
 
   return (
-    <div className="carousel">
+    <div className="container-carousel">
       <div className="main-title">
         <h1>Featured Playlists</h1>
       </div>
@@ -37,7 +37,7 @@ export default function Caroulsel() {
         <img src="/static/images/216151_right_chevron_icon.png" alt="" />
       </button>
 
-      <div className="container" ref={carousel}>
+      <div className="carousel" ref={carousel}>
         {data.map((item) => {
           const { id, images, name, description, href } = item;
 

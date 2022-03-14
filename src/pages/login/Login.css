@@ -24,13 +24,16 @@
 
 .container-login .btn-login {
   margin: 1em 0 0 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 .container-login .btn-login a {
   font: 600 1.5rem Montserrat;
   color: #fefefe;
   text-decoration: none;
-  padding: 1.3rem 5rem;
+  padding: 1rem 0.5rem;
   width: 85vw;
   background-color: #8b3ceb;
   border-radius: 500px;
