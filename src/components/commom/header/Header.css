@@ -10,3 +10,7 @@
   color: #fefefe;
   font-size: 1rem;
 }
+
+.search-component {
+  display: none;
+}

@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
-import Api from '../../service/Api';
+import api from '../../service/Api';
+
 import './Search.css';
 
 export default function Search() {
@@ -30,18 +31,23 @@ export default function Search() {
 
   const searchArtists = async (e) => {
     e.preventDefault();
-    const { data } = await Api.get(`/search`, {
+
+    const data = await api.get(`/search`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
       params: {
         q: searchKey,
-        type: 'artist',
+        type: 'album%2Cartist%2Cplaylist%2Ctrack',
+        market: 'br',
       },
     });
-    setArtists(data.artists.items);
+    setArtists(data.data.artists.items);
   };
 
   const renderArtists = () => {
     return artists.map((artist) => (
-      <div key={artist.id}>
+      <div className="artist" key={artist.id}>
         {artist.images.length ? (
           <img width={'100%'} src={artist.images[0].url} alt="" />
         ) : (

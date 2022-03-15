@@ -2,14 +2,14 @@ import React, { useEffect, useState, useRef } from 'react';
 
 import './Carousel.css';
 
-import Api from '../../service/Api';
+import api from '../../service/Api';
 
 export default function Caroulsel() {
   const [data, setData] = useState([]);
   const carousel = useRef(null);
 
   useEffect(() => {
-    Api.get('/browse/featured-playlists').then((response) => {
+    api.get('/browse/featured-playlists').then((response) => {
       setData(response.data.playlists.items);
     });
   }, []);
