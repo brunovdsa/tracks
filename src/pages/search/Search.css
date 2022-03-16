@@ -1,6 +1,84 @@
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.search,
+.search form,
+.search-results,
+.search-results section,
+.search-results section .album,
+.search-results section .track,
+.search-results section .playlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+.search-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0 0;
+  width: 100vw;
+  height: 3rem;
+}
+
+.search-header .btn-submit,
+.search-header .logout-btn {
+  display: none;
+}
+
+.search form {
+  height: 100%;
+  width: 75%;
+}
+
+.search form .search-input {
+  background-color: transparent;
+  font: 300 1.1rem Montserrat;
+  color: #fefefe;
+  border: none;
+  outline: none;
+  margin-left: 0.7em;
+  padding: 0.35rem 0;
+  width: 100%;
+  border-bottom: 1px solid #4d505f63;
+}
+
+.search form .search-input:focus {
+  border-bottom: 1px solid #414350;
+}
+
+.search-results {
+  text-align: center;
+
+  flex-direction: column;
+}
+
+.search-results .title-result {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.search-results section {
+  flex-direction: row;
+  font: 600 1.3rem Montserrat;
+  color: #fefefe;
+}
+
+.search-results section .artist,
+.search-results section .album,
+.search-results section .track,
+.search-results section .playlist {
+  flex-direction: column;
+}
+
+.search-results section .artist {
+  display: flex;
+  justify-content: flex-start;
 }
